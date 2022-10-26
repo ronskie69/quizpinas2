@@ -1,0 +1,18 @@
+.last-page {
+    text-align: center;
+}
+.form-group {
+    display: block;
+    width: 100%;
+}
+.form-group .form-input {
+    width: 100%;
+    border-radius: 20px;
+    padding: 10px;
+    margin-bottom: 20px;
+    outline: none;
+    font-size: .95rem;
+    text-align: center;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}

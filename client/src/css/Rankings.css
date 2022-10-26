@@ -1,0 +1,16 @@
+.rankings {
+    text-align: center;
+}
+table {
+    padding: 10px;
+    width: 420px;
+    background: rgba(0,0,0,0.3);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+td {
+    padding: 10px;
+}
+tr {
+    text-align: center;
+    vertical-align: center;
+}
