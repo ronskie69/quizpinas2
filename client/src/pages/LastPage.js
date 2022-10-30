@@ -9,13 +9,18 @@ import '../css/LastPage.css'
 import '../css/AnswerButton.css'
 
 import axios from 'axios'
+import { useEffect } from 'react'
+import { Howl, Howler} from 'howler'
+import { tapos_na } from '../sounds'
 
-const LastPage = ({ score, next, questLength }) => {
+const LastPage = ({ score, next }) => {
 
     const [ playerName, setPlayerName ] = useState("")
     const [ players, setPlayers ] = useContext(PContext)
 
     const Toaster = withReactContent(Swal)
+
+    var bg = null
 
     const iconStyle = {
         color: '#edac1a',
@@ -38,24 +43,39 @@ const LastPage = ({ score, next, questLength }) => {
 
         if(!checkExisting || checkExisting.length == 0){
             if(score >= 25){
-                axios.post('http://localhost:3002/quizpinas/add', newPlayer)
+                axios.post('https://quizpinas2.herokuapp.com/quizpinas/add', newPlayer)
                     .then(() => {
-                        setPlayers([...players, newPlayer])
+                        next(4, newPlayer)
                     })
                     .catch(err => console.log("Error", err))
             } 
         } else {
             return Toaster.fire({ text: 'Player already exists!', icon: 'error', confirmButtonColor: '#000',cancelButtonText: 'Okay'})
         }
-        next(4)
     }
+
+    useEffect(() =>{
+        Howler.stop()
+
+        bg = new Howl({
+            src: tapos_na.url,
+            loop: true,
+            autoplay: true,
+            onloaderror: (e,r) => {
+                console.log(e,r)
+                Howler.stop()
+                bg.play()
+            }
+        })
+
+    },[0])
 
 
   return (
     <div className='last-page'>
         <h4>Quiz Finished!</h4>
         <p>
-            Your score is {score} out of {questLength}!
+            Your score is {score} out of 50!
             &nbsp;&nbsp;{ score > 25 ? <FaSmileWink style={iconStyle}/>:<>
             <FaSadCry style={iconStyle}/> <p>You failed to be in the rankings.</p>
             </>}
