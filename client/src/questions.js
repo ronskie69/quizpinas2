@@ -523,7 +523,7 @@ export const questions = [
             },
             {
                 answer: 'Kalayaan Lake',
-                isCorrect: true,
+                isCorrect: false,
             }
         ],
         explanation: 'Laguna de Bay has an area of 911.36 km² and a shoreline of 220 kilometers.'
@@ -1421,7 +1421,7 @@ export const questions = [
             },
             {
                 answer: "Diosdado Macapagal",
-                isCorrect: false,
+                isCorrect: true,
             }
         ],
         explanation: "Diosdado Macapagal was 9th President of the Philippines from 1961 to 1965."
@@ -1609,5 +1609,235 @@ export const questions = [
             }
         ],
         explanation: "Aetas or Negritos are one of the earliest known to be the inhabitants of the Philippines."
+    },
+    {
+        questionID: 71,
+        question: "What is the longest bridge in the Philippines?",
+        answers: [
+            {
+                answer: 'San Juanico Bridge',
+                isCorrect: false,
+            },
+            {
+                answer: 'Metro Manila Skyway',
+                isCorrect: false,
+            },
+            {
+                answer: 'Cebu-Cordova Bridge',
+                isCorrect: true,
+            },
+            {
+                answer: "Magat Bridge",
+                isCorrect: false,
+            }
+        ],
+        explanation: "That was Cebu-Cordova Bridge opened and inaugurated on April 27, 2022."
+    },
+    {
+        questionID: 72,
+        question: "What is the least populated highly urbanized city in the Philippines?",
+        answers: [
+            {
+                answer: 'Amlan, Negros Oriental',
+                isCorrect: false,
+            },
+            {
+                answer: 'Calamba, Laguna',
+                isCorrect: false,
+            },
+            {
+                answer: 'Tacloban City, Leyte',
+                isCorrect: false,
+            },
+            {
+                answer: "Marawi City, Lanao Del Sur",
+                isCorrect: true,
+            }
+        ],
+        explanation: "Marawi City, Lanao Del Sur is the least populated highly urbanized city in the Philippines."
+    },
+    {
+        questionID: 73,
+        question: "Who is the Father of the Internet in the Philippines?",
+        answers: [
+            {
+                answer: 'Dr. William Torres',
+                isCorrect: true,
+            },
+            {
+                answer: 'Dr. Willie Ong',
+                isCorrect: false,
+            },
+            {
+                answer: 'Dr. Juanito Pedro',
+                isCorrect: false,
+            },
+            {
+                answer: "Dr. Juanito Makasalanan",
+                isCorrect: false,
+            }
+        ],
+        explanation: "Dr. William T. Torres is recognized for his significant contribution in computer and information technology."
+    },
+    {
+        questionID: 74,
+        question: "Cradle of Philippine Arts.",
+        answers: [
+            {
+                answer: 'Laguna',
+                isCorrect: false,
+            },
+            {
+                answer: 'Romblon',
+                isCorrect: false,
+            },
+            {
+                answer: 'Capiz',
+                isCorrect: false,
+            },
+            {
+                answer: "Rizal",
+                isCorrect: true,
+            }
+        ],
+        explanation: "Rizal is known as 'Cradle of Philippine Arts'."
+    },
+    {
+        questionID: 75,
+        question: "What is 'Surfing Capital of the North'?",
+        answers: [
+            {
+                answer: 'La Union',
+                isCorrect: true,
+            },
+            {
+                answer: 'General Santos City',
+                isCorrect: false,
+            },
+            {
+                answer: 'Tuguegarao',
+                isCorrect: false,
+            },
+            {
+                answer: "Apayao",
+                isCorrect: false,
+            }
+        ],
+        explanation: "La Union is the 'Surfing Capital of the North'."
+    },
+    {
+        questionID: 76,
+        question: "It is one of the oldest cemeteries in the Philippines.",
+        answers: [
+            {
+                answer: 'Lecheria Municipal Cemetery',
+                isCorrect: false,
+            },
+            {
+                answer: 'Rizal Memorial Park',
+                isCorrect: false,
+            },
+            {
+                answer: 'Manila North Cemetery',
+                isCorrect: true,
+            },
+            {
+                answer: "Holy Garden's Memorial Park",
+                isCorrect: false,
+            }
+        ],
+        explanation: "Manila North Cemetery is one of the oldest cemeteries in the Philippines."
+    },
+    {
+        questionID: 77,
+        question: "Father of Filipino Opera.",
+        answers: [
+            {
+                answer: 'Pedrino Ramos',
+                isCorrect: false,
+            },
+            {
+                answer: 'Ladislao Bonus',
+                isCorrect: true,
+            },
+            {
+                answer: 'Tomas Cloma',
+                isCorrect: false,
+            },
+            {
+                answer: "Jose Corazon De Jesus",
+                isCorrect: false,
+            }
+        ],
+        explanation: "His pioneering work on musical drama earned him the title of 'Father of Filipino Opera'."
+    },
+    {
+        questionID: 78,
+        question: "Known as Special Science and Nature City of the Philippines.",
+        answers: [
+            {
+                answer: 'Los Baños',
+                isCorrect: true,
+            },
+            {
+                answer: 'Camiguin',
+                isCorrect: false,
+            },
+            {
+                answer: 'Manila',
+                isCorrect: false,
+            },
+            {
+                answer: "Agusan Del Sur",
+                isCorrect: false,
+            }
+        ],
+        explanation: "Los Baños is known as Special Science and Nature City of the Philippines."
+    },
+    {
+        questionID: 79,
+        question: "Fireworks Capital of the Philippines.",
+        answers: [
+            {
+                answer: 'Liliw, Laguna',
+                isCorrect: false,
+            },
+            {
+                answer: 'Bocaue, Bulacan',
+                isCorrect: true,
+            },
+            {
+                answer: 'Angono, Rizal',
+                isCorrect: false,
+            },
+            {
+                answer: "Calatagan, Batangas",
+                isCorrect: false,
+            }
+        ],
+        explanation: "Bocaue, Bulacan is known as 'Fireworks Capital of the Philippines'."
+    },
+    {
+        questionID: 80,
+        question: "Known as Poor Man's Boracay.",
+        answers: [
+            {
+                answer: 'Pansol',
+                isCorrect: false,
+            },
+            {
+                answer: 'Baguio',
+                isCorrect: false,
+            },
+            {
+                answer: 'Pagsanjan',
+                isCorrect: false,
+            },
+            {
+                answer: "Puerto Galera",
+                isCorrect: true,
+            }
+        ],
+        explanation: "Puerto Galera is known as 'Poor Man's Boracay'."
     },
 ];
