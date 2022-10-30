@@ -1021,7 +1021,7 @@ export const questions = [
                 isCorrect: false,
             },
             {
-                answer: 'Matriano Herbosa',
+                answer: 'El Nagonus',
                 isCorrect: false,
             },
             {
@@ -1029,7 +1029,7 @@ export const questions = [
                 isCorrect: true,
             },
             {
-                answer: 'Carlo J. Caparas',
+                answer: 'Quatro Kantos',
                 isCorrect: false,
             }
         ],
@@ -1048,7 +1048,7 @@ export const questions = [
                 isCorrect: false,
             },
             {
-                answer: '249',
+                answer: '323',
                 isCorrect: false,
             },
             {
@@ -1149,5 +1149,465 @@ export const questions = [
             }
         ],
         explanation: "He was called Great Dissenter because of his uncomprising stand against pro-American policy of R. Magsaysay, the very same man whom he helped to put in power."
-    }
+    },
+    {
+        questionID: 51,
+        question: "Meaning of 'Consummatum Est'?",
+        answers: [
+            {
+                answer: '"It is gone"',
+                isCorrect: false,
+            },
+            {
+                answer: '"It is finished"',
+                isCorrect: true,
+            },
+            {
+                answer: '"It will be okay"',
+                isCorrect: false,
+            },
+            {
+                answer: `"I love y'all"`,
+                isCorrect: false,
+            }
+        ],
+        explanation: "That was Dr. Jose Rizal's last words."
+    },
+    {
+        questionID: 52,
+        question: "Who was the singer of 'Magellan' song?",
+        answers: [
+            {
+                answer: 'Yoyoy Villame',
+                isCorrect: true,
+            },
+            {
+                answer: 'Willie Revillame',
+                isCorrect: false,
+            },
+            {
+                answer: 'Ariel Rivera',
+                isCorrect: false,
+            },
+            {
+                answer: "Rodel Naval",
+                isCorrect: false,
+            }
+        ],
+        explanation: "Yoyoy Villame was the singer of 'Magellan Song'."
+    },
+    {
+        questionID: 53,
+        question: "Who was the leader of Maute Group?",
+        answers: [
+            {
+                answer: 'Isnilon Hapilon',
+                isCorrect: false,
+            },
+            {
+                answer: 'Zulkifli Binhir',
+                isCorrect: false,
+            },
+            {
+                answer: 'Omar Maute',
+                isCorrect: true,
+            },
+            {
+                answer: "Marwan",
+                isCorrect: false,
+            }
+        ],
+        explanation: "Omar Maute was the leader of Maute Group."
+    },
+    {
+        questionID: 54,
+        question: "Culinary Capital of the Philippines.",
+        answers: [
+            {
+                answer: 'Naga City',
+                isCorrect: false,
+            },
+            {
+                answer: 'Albay',
+                isCorrect: false,
+            },
+            {
+                answer: 'Bacolod',
+                isCorrect: false,
+            },
+            {
+                answer: "Pampanga",
+                isCorrect: true,
+            }
+        ],
+        explanation: "Pampanga is the Culinary Capital of the Philippines."
+    },
+    {
+        questionID: 55,
+        question: "Which of the following is the Heart of the Philippines?",
+        answers: [
+            {
+                answer: 'Manila',
+                isCorrect: false,
+            },
+            {
+                answer: 'Dumaguete',
+                isCorrect: false,
+            },
+            {
+                answer: 'Quezon City',
+                isCorrect: false,
+            },
+            {
+                answer: "Marinduque",
+                isCorrect: true,
+            }
+        ],
+        explanation: "Marinduque was called 'The Heart of the Philippines' because of the shape of the island that is similar to a human heart."
+    },
+    {
+        questionID: 56,
+        question: "What does 'G' in PAGASA stands for?",
+        answers: [
+            {
+                answer: 'Geometrical',
+                isCorrect: false,
+            },
+            {
+                answer: 'Geophysical',
+                isCorrect: true,
+            },
+            {
+                answer: 'Geospritual',
+                isCorrect: false,
+            },
+            {
+                answer: "Gunggong",
+                isCorrect: false,
+            }
+        ],
+        explanation: "PAGASA stands for Philippine Atmospheric, Geophysical and Astronomical Services Administration."
+    },
+    {
+        questionID: 57,
+        question: "NAPOLCOM stands for?",
+        answers: [
+            {
+                answer: 'National Anti-Poverty Operations Local Commission',
+                isCorrect: false,
+            },
+            {
+                answer: 'National Police Commission',
+                isCorrect: false,
+            },
+            {
+                answer: 'National Politics Commission',
+                isCorrect: false,
+            },
+            {
+                answer: "National Police Computer Services",
+                isCorrect: false,
+            }
+        ],
+        explanation: "NAPOLCOM stands for National Police Commission."
+    },
+    {
+        questionID: 58,
+        question: "It is an agency of DILG mandated to direct, supervise operations of all jails of the Philippines?",
+        answers: [
+            {
+                answer: 'BJMP',
+                isCorrect: true,
+            },
+            {
+                answer: 'BPTFO',
+                isCorrect: false,
+            },
+            {
+                answer: 'PNP-JS',
+                isCorrect: false,
+            },
+            {
+                answer: "BFAR",
+                isCorrect: false,
+            }
+        ],
+        explanation: "BJMP stands for Bureau of Jail Management and Penology."
+    },
+    {
+        questionID: 59,
+        question: "NCIP stands for?",
+        answers: [
+            {
+                answer: 'National Commission on Internal Policy ',
+                isCorrect: false,
+            },
+            {
+                answer: 'National Commission on Indigenous Peoples',
+                isCorrect: true,
+            },
+            {
+                answer: 'National Council of Interior Politics',
+                isCorrect: false,
+            },
+            {
+                answer: "National Commission on International Provinces",
+                isCorrect: false,
+            }
+        ],
+        explanation: "NCIP stands for National Commission on Indigenous Peoples."
+    },
+    {
+        questionID: 60,
+        question: "PGH stands for?",
+        answers: [
+            {
+                answer: 'Philippine Gaming Hub',
+                isCorrect: false,
+            },
+            {
+                answer: 'Political Guided Hospitals',
+                isCorrect: false,
+            },
+            {
+                answer: 'Philippine General Hospital',
+                isCorrect: true,
+            },
+            {
+                answer: "Philippine Grand Houses",
+                isCorrect: false,
+            }
+        ],
+        explanation: "PGH stands for Philippine General Hospital."
+    },
+    {
+        questionID: 61,
+        question: "Fourth Vice President of the Philippines",
+        answers: [
+            {
+                answer: 'Carlos P. Garcia',
+                isCorrect: true,
+            },
+            {
+                answer: 'Fernando Lopez',
+                isCorrect: false,
+            },
+            {
+                answer: 'Elpidio Quirino',
+                isCorrect: false,
+            },
+            {
+                answer: "Emmanuel Pelaez",
+                isCorrect: false,
+            }
+        ],
+        explanation: "Carlos P. Garcia was 4th vice president and later became the President after the death of Ramon Magsaysay in 1957."
+    },
+    {
+        questionID: 62,
+        question: "Ninth President of the Philippines.",
+        answers: [
+            {
+                answer: 'Corazon Aquino',
+                isCorrect: false,
+            },
+            {
+                answer: 'Ferdinand Marcos Sr.',
+                isCorrect: false,
+            },
+            {
+                answer: 'Fidel Ramos',
+                isCorrect: false,
+            },
+            {
+                answer: "Diosdado Macapagal",
+                isCorrect: false,
+            }
+        ],
+        explanation: "Diosdado Macapagal was 9th President of the Philippines from 1961 to 1965."
+    },
+    {
+        questionID: 63,
+        question: "When was the MV Doña Paz Tragedy.",
+        answers: [
+            {
+                answer: 'December 25, 1987',
+                isCorrect: false,
+            },
+            {
+                answer: 'December 20, 1987',
+                isCorrect: true,
+            },
+            {
+                answer: 'December 23, 1986',
+                isCorrect: false,
+            },
+            {
+                answer: "December 24, 1987",
+                isCorrect: false,
+            }
+        ],
+        explanation: "MV Doña Paz sank on December 20, 1987 and killed more than a thousand of people. That is the one of worst tragedies in the Philippines."
+    },
+    {
+        questionID: 64,
+        question: "When was the Ozone Disco Tragedy.",
+        answers: [
+            {
+                answer: 'March 5, 1996',
+                isCorrect: false,
+            },
+            {
+                answer: 'March 8, 1996',
+                isCorrect: false,
+            },
+            {
+                answer: 'March 18, 1996',
+                isCorrect: true,
+            },
+            {
+                answer: "March 16, 1996",
+                isCorrect: false,
+            }
+        ],
+        explanation: "Ozone Disco fire was on March 18, 1996. Killed more than 100 people."
+    },
+    {
+        questionID: 65,
+        question: "Timber City of the South.",
+        answers: [
+            {
+                answer: 'Tacloban City',
+                isCorrect: false,
+            },
+            {
+                answer: 'Butuan',
+                isCorrect: true,
+            },
+            {
+                answer: 'Gingoog',
+                isCorrect: false,
+            },
+            {
+                answer: "Pagadian",
+                isCorrect: false,
+            }
+        ],
+        explanation: "Butuan City in Agusan Del Norte was the 'Timber City of the South'."
+    },
+    {
+        questionID: 66,
+        question: "Who was the Asia's fastest woman in the 80's?",
+        answers: [
+            {
+                answer: 'Julie De Vega',
+                isCorrect: false,
+            },
+            {
+                answer: 'Julia Vega',
+                isCorrect: true,
+            },
+            {
+                answer: 'Lydia Vega',
+                isCorrect: false,
+            },
+            {
+                answer: "Lydia De Vega",
+                isCorrect: false,
+            }
+        ],
+        explanation: "Lydia De Vega was the Asia's fastest woman in the 80's."
+    },
+    {
+        questionID: 67,
+        question: "What is the scientific name of Tamaraw?",
+        answers: [
+            {
+                answer: 'Babalus Mindorensis',
+                isCorrect: true,
+            },
+            {
+                answer: 'Tragulus Nigransis',
+                isCorrect: false,
+            },
+            {
+                answer: 'Babalus Bubalis',
+                isCorrect: false,
+            },
+            {
+                answer: "Torosus Minos",
+                isCorrect: false,
+            }
+        ],
+        explanation: "Babalus Mindorensis was the scientific name of Tamaraw."
+    },
+    {
+        questionID: 68,
+        question: "Known as Philippine mouse deer.",
+        answers: [
+            {
+                answer: 'Palawan Peacock',
+                isCorrect: false,
+            },
+            {
+                answer: 'Visayan Warty Pig',
+                isCorrect: false,
+            },
+            {
+                answer: 'Pilandok',
+                isCorrect: true,
+            },
+            {
+                answer: "Flying Fox",
+                isCorrect: false,
+            }
+        ],
+        explanation: "Pilandok is a Philippine mouse deer."
+    },
+    {
+        questionID: 69,
+        question: "Land of Goldren Sunrise.",
+        answers: [
+            {
+                answer: 'Aurora',
+                isCorrect: true,
+            },
+            {
+                answer: 'Lucena',
+                isCorrect: false,
+            },
+            {
+                answer: 'Sulu',
+                isCorrect: false,
+            },
+            {
+                answer: "Iligan",
+                isCorrect: false,
+            }
+        ],
+        explanation: "Aurora is known as 'Land of Goldren Sunrise'."
+    },
+    {
+        questionID: 70,
+        question: "Oldest tribe and one of the earliest known to be the inhabitants of the Philippines.",
+        answers: [
+            {
+                answer: 'Mangyan',
+                isCorrect: false,
+            },
+            {
+                answer: 'Manobo',
+                isCorrect: false,
+            },
+            {
+                answer: 'Bagobo',
+                isCorrect: false,
+            },
+            {
+                answer: "Aetas or Negritos",
+                isCorrect: true,
+            }
+        ],
+        explanation: "Aetas or Negritos are one of the earliest known to be the inhabitants of the Philippines."
+    },
 ];
