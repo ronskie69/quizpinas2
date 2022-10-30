@@ -1,9 +1,16 @@
 .rankings {
     text-align: center;
+    padding: 20px;
+}
+.table-wrapper {
+    overflow-y: auto;
+    /* height: fit-content; */
+    max-height: 520px;
+    width: 100%;
 }
 table {
     padding: 10px;
-    width: 420px;
+    width: 100%;
     background: rgba(0,0,0,0.3);
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
