@@ -8,7 +8,7 @@ const PlayerContext = ({ children }) => {
     const [ players, setPlayers ] = useState([])
 
     useEffect(() => {
-      axios.get('http://localhost:3002/quizpinas/')
+      axios.get('https://quizpinas2.herokuapp.com/quizpinas/')
         .then(response => {
           setPlayers(response.data)
         })
