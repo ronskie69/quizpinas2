@@ -1840,4 +1840,502 @@ export const questions = [
         ],
         explanation: "Puerto Galera is known as 'Poor Man's Boracay'."
     },
+    {
+        questionID: 81,
+        question: "What is thr most popular tourist spot in the Philippines?",
+        answers: [
+            {
+                answer: 'Chocolate Hills',
+                isCorrect: false,
+            },
+            {
+                answer: 'Banaue Rice Terraces',
+                isCorrect: false,
+            },
+            {
+                answer: 'El Nido, Palawan',
+                isCorrect: true,
+            },
+            {
+                answer: "Siargao",
+                isCorrect: false,
+            }
+        ],
+        explanation: "El Nido is the most popular tourist spot in the Philippines."
+    },
+    {
+        questionID: 82,
+        question: "What is the smallest province in the Philippines?",
+        answers: [
+            {
+                answer: 'Capiz',
+                isCorrect: false,
+            },
+            {
+                answer: 'Batangas',
+                isCorrect: false,
+            },
+            {
+                answer: 'Camiguin',
+                isCorrect: false,
+            },
+            {
+                answer: "Batanes",
+                isCorrect: true,
+            }
+        ],
+        explanation: "Batanes is the smallest province in the Philippines."
+    },
+    {
+        questionID: 83,
+        question: "Who is the Father of Philippine Poetry?",
+        answers: [
+            {
+                answer: 'Pedro Calungsod',
+                isCorrect: false,
+            },
+            {
+                answer: 'Francisco Balagtas',
+                isCorrect: true,
+            },
+            {
+                answer: 'Dr. Jose Rizal',
+                isCorrect: false,
+            },
+            {
+                answer: "Jose Palma",
+                isCorrect: false,
+            }
+        ],
+        explanation: "Francisco Balagtas is the Father of Philippine Poetry."
+    },
+    {
+        questionID: 83,
+        question: "Who is the Father of Philippine Movies?",
+        answers: [
+            {
+                answer: 'Jose Nepomuceno',
+                isCorrect: true,
+            },
+            {
+                answer: 'Antonio Molina',
+                isCorrect: false,
+            },
+            {
+                answer: 'Ramon Valera',
+                isCorrect: false,
+            },
+            {
+                answer: "Victor Badillo",
+                isCorrect: false,
+            }
+        ],
+        explanation: "Jose Nepomuceno is the Father of Philippine Movies and a founder of Philippine Cinema."
+    },
+    {
+        questionID: 84,
+        question: "Who is the Mother of Philippine Dancing?",
+        answers: [
+            {
+                answer: 'Josefa Llanes Escoda',
+                isCorrect: false,
+            },
+            {
+                answer: 'Alice Garcia Reyes',
+                isCorrect: false,
+            },
+            {
+                answer: 'Francisca Reyes-Aquino',
+                isCorrect: true,
+            },
+            {
+                answer: "Angela Isadora Duncan",
+                isCorrect: false,
+            }
+        ],
+        explanation: "Francisca Reyes-Aquino is the Mother of Philippine Dancing."
+    },
+    {
+        questionID: 85,
+        question: "What is the origin of 'Maglalatik' Dance?",
+        answers: [
+            {
+                answer: 'Angono, Rizal',
+                isCorrect: false,
+            },
+            {
+                answer: 'Biñan, Laguna',
+                isCorrect: true,
+            },
+            {
+                answer: 'Baliuag, Bulacan',
+                isCorrect: false,
+            },
+            {
+                answer: "Kawit, Cavite",
+                isCorrect: false,
+            }
+        ],
+        explanation: "'Maglalatik' Dance is an original native dance in the Philippines in which coconut halves are attached to the torse of Dancer. It was originated in Biñan, Laguna."
+    },
+    {
+        questionID: 86,
+        question: "What is the largest church in the Philippines and in Asia?",
+        answers: [
+            {
+                answer: 'Taal Basilica',
+                isCorrect: true,
+            },
+            {
+                answer: 'San Agustin Church',
+                isCorrect: false,
+            },
+            {
+                answer: 'Saint John the Baptist Church',
+                isCorrect: false,
+            },
+            {
+                answer: "Baclayon Church",
+                isCorrect: false,
+            }
+        ],
+        explanation: "Taal Basilica is considered to be the largest church in the Philippines and in Asia with 291 feet long and 157 feet wide."
+    },
+    {
+        questionID: 87,
+        question: "It is the name of the dog of Dr. Jose Rizal.",
+        answers: [
+            {
+                answer: 'Luckie',
+                isCorrect: false,
+            },
+            {
+                answer: 'Hachi',
+                isCorrect: false,
+            },
+            {
+                answer: 'Pepe',
+                isCorrect: false,
+            },
+            {
+                answer: "Usman",
+                isCorrect: true,
+            }
+        ],
+        explanation: "'Usman' is the name of pet dog of Dr. Jose Rizal."
+    },
+    {
+        questionID: 88,
+        question: "What is the oldest church in the Philippines?",
+        answers: [
+            {
+                answer: 'Saint John the Baptist Church',
+                isCorrect: false,
+            },
+            {
+                answer: 'Quipayo Church',
+                isCorrect: false,
+            },
+            {
+                answer: 'San Agustin Church',
+                isCorrect: true,
+            },
+            {
+                answer: "Majayjay Church",
+                isCorrect: false,
+            }
+        ],
+        explanation: "San Agustin Church is considered to be the oldest church in the Philippines."
+    },
+    {
+        questionID: 89,
+        question: "Known as 'Pambansang Kamao'.",
+        answers: [
+            {
+                answer: 'Nonito Donaire',
+                isCorrect: false,
+            },
+            {
+                answer: 'Manny Pacquiao',
+                isCorrect: true,
+            },
+            {
+                answer: 'Donnie Nietes',
+                isCorrect: false,
+            },
+            {
+                answer: "Gabriel Elorde",
+                isCorrect: false,
+            }
+        ],
+        explanation: "Manny Pacquiao is known as 'Pambansang Kamao'."
+    },
+    {
+        questionID: 90,
+        question: "Known as 'Pambansang Puno'.",
+        answers: [
+            {
+                answer: 'Narra',
+                isCorrect: true,
+            },
+            {
+                answer: 'Molave',
+                isCorrect: false,
+            },
+            {
+                answer: 'Balete',
+                isCorrect: false,
+            },
+            {
+                answer: "Acacia",
+                isCorrect: false,
+            }
+        ],
+        explanation: "Narra tree is known as 'Pambansang Puno'."
+    },
+    {
+        questionID: 91,
+        question: "Known as 'Pambansang Isda'.",
+        answers: [
+            {
+                answer: 'Galunggong',
+                isCorrect: false,
+            },
+            {
+                answer: 'Tilapya',
+                isCorrect: false,
+            },
+            {
+                answer: 'Bangus',
+                isCorrect: true,
+            },
+            {
+                answer: "Sapsap",
+                isCorrect: false,
+            }
+        ],
+        explanation: "Bangus or milkfish is known as 'Pambansang Isda'."
+    },
+    {
+        questionID: 92,
+        question: "Known as 'Pambansang Laro'.",
+        answers: [
+            {
+                answer: 'Arnis',
+                isCorrect: true,
+            },
+            {
+                answer: 'Sepak Takraw',
+                isCorrect: false,
+            },
+            {
+                answer: 'Basketbol',
+                isCorrect: false,
+            },
+            {
+                answer: "Patintero",
+                isCorrect: false,
+            }
+        ],
+        explanation: "Arnis is known as 'Pambansang Laro'."
+    },
+    {
+        questionID: 93,
+        question: "Known as 'Pambansang Bulaklak'.",
+        answers: [
+            {
+                answer: 'Rosas',
+                isCorrect: false,
+            },
+            {
+                answer: 'Sampaguita',
+                isCorrect: true,
+            },
+            {
+                answer: 'Gumamela',
+                isCorrect: false,
+            },
+            {
+                answer: "Orchid",
+                isCorrect: false,
+            }
+        ],
+        explanation: "Sampaguita is known as 'Pambansang Bulaklak'."
+    },
+    {
+        questionID: 94,
+        question: "Known as 'Pambansang Dahon'.",
+        answers: [
+            {
+                answer: 'Lagundi',
+                isCorrect: false,
+            },
+            {
+                answer: 'Oregano',
+                isCorrect: false,
+            },
+            {
+                answer: 'Banaba',
+                isCorrect: false,
+            },
+            {
+                answer: "Anahaw",
+                isCorrect: true,
+            }
+        ],
+        explanation: "Anahaw is known as 'Pambansang Dahon'."
+    },
+    {
+        questionID: 95,
+        question: "Known as 'Pambansang Prutas'.",
+        answers: [
+            {
+                answer: 'Mansanas',
+                isCorrect: false,
+            },
+            {
+                answer: 'Pakwan',
+                isCorrect: false,
+            },
+            {
+                answer: 'Mangga',
+                isCorrect: true,
+            },
+            {
+                answer: "Ubas",
+                isCorrect: false,
+            }
+        ],
+        explanation: "Mangga or Mango is known as 'Pambansang Prutas'."
+    },
+    {
+        questionID: 96,
+        question: "Known as 'Pambansang Sayaw'.",
+        answers: [
+            {
+                answer: 'Zumba',
+                isCorrect: false,
+            },
+            {
+                answer: 'Salsa',
+                isCorrect: false,
+            },
+            {
+                answer: 'Tinikling',
+                isCorrect: false,
+            },
+            {
+                answer: "Cariñosa",
+                isCorrect: true,
+            }
+        ],
+        explanation: "Cariñosa is known as 'Pambansang Sayaw'."
+    },
+    {
+        questionID: 97,
+        question: "Known as 'Pambansang Ibon'.",
+        answers: [
+            {
+                answer: 'Pipit',
+                isCorrect: false,
+            },
+            {
+                answer: 'Agila',
+                isCorrect: true,
+            },
+            {
+                answer: 'Maya',
+                isCorrect: false,
+            },
+            {
+                answer: "Rooster",
+                isCorrect: false,
+            }
+        ],
+        explanation: "Agila or Philippine Eagle is known as 'Pambansang Ibon'."
+    },
+    {
+        questionID: 98,
+        question: "When was Philippine Basketball Association (PBA) established?",
+        answers: [
+            {
+                answer: '1958',
+                isCorrect: true,
+            },
+            {
+                answer: '1975',
+                isCorrect: false,
+            },
+            {
+                answer: '1980',
+                isCorrect: false,
+            },
+            {
+                answer: "1963",
+                isCorrect: false,
+            }
+        ],
+        explanation: "PBA was established in 1975 and first professional basketball league in Asia and the second oldest basketball league in the world after NBA."
+    },
+    {
+        questionID: 99,
+        question: "Who is the mother of Philippine Ballet?",
+        answers: [
+            {
+                answer: 'Adoracion Garcia',
+                isCorrect: false,
+            },
+            {
+                answer: 'Alice Garcia Reyes',
+                isCorrect: true,
+            },
+            {
+                answer: 'Eddie Garcia',
+                isCorrect: false,
+            },
+            {
+                answer: "Van Damme",
+                isCorrect: false,
+            }
+        ],
+        explanation: "Alice Garcia Reyes is the mother of Philippine Ballet."
+    },
+    {
+        questionID: 100,
+        question: "World's Oldest Chinatown?",
+        answers: [
+            {
+                answer: 'Binondo, Manila Chinatown',
+                isCorrect: true,
+            },
+            {
+                answer: 'Angeles, Pampanga Chinatown',
+                isCorrect: false,
+            },
+            {
+                answer: 'Bocaue, Bulacan',
+                isCorrect: false,
+            },
+            {
+                answer: "Vigan",
+                isCorrect: false,
+            }
+        ],
+        explanation: "Binondo, Manila's Chinatown is the oldest chinatown in the world and more than 400 years since it was established."
+    },
+    {
+        questionID: 101,
+        question: "Is Dr. Jose Rizal a doctor?",
+        answers: [
+            {
+                answer: 'Yes',
+                isCorrect: true,
+            },
+            {
+                answer: 'No',
+                isCorrect: false,
+            },
+        ],
+        explanation: "Dr. Jose Rizal was a real ophtalmologist."
+    },
 ];
