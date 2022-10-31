@@ -3,7 +3,7 @@ import Swal from 'sweetalert2'
 import withReactContent from 'sweetalert2-react-content'
 import { Howl, Howler } from 'howler'
 
-import { intro, end, mid, tama, mali, departure } from '../sounds'
+import { intro, end, mid, tama, mali, departure, almost_end } from '../sounds'
 
 import '../css/QuizApp.css'
 
@@ -24,7 +24,6 @@ function QuizApp({ done, questions }) {
             new Howl({
                 src: tama.url,
                 autoplay: true,
-                loop: true,
                 html5: true
             }).play()
 
@@ -34,22 +33,20 @@ function QuizApp({ done, questions }) {
             new Howl({
                 src: mali.url,
                 autoplay: true,
-                loop: true,
                 html5: true
             }).play()
         }
         setExplanation(true)
 
-        if(currentQuestion < 50){
+        if(currentQuestion === 49){
+            let corrects = correct + (ans ? 1 : 0);
+            done(corrects)
+        } else {
             timeout=setTimeout(() => {
                 setExplanation(false)
                 setWrong(false)
                 setCurrentQuestion(currentQuestion + 1)
-
             }, 5000)
-        } else {
-            let corrects = correct + (ans ? 1 : 0);
-            done(corrects)
         }
     }
 
@@ -67,7 +64,8 @@ function QuizApp({ done, questions }) {
             confirmButtonText: 'Yes, I Give Up!',
             showCancelButton: true,
             cancelButtonText: 'Never',
-            confirmButtonColor: '#000'
+            confirmButtonColor: '#000',
+            iconColor: '#000'
         }).then(res => {
             clearTimeout(timeout)
             if(res.isConfirmed){
@@ -120,7 +118,18 @@ function QuizApp({ done, questions }) {
                 }
             })
             theme.play()
-        } else if(currentQuestion < 50){
+        } else if(currentQuestion < 40){
+            theme = new Howl({
+                src: almost_end.url,
+                autoplay: true,
+                loop: true,
+                onloaderror:()=>{
+                    Howler.stop()
+                    theme.play()
+                }
+            })
+            theme.play()
+        } else {
             theme = new Howl({
                 src: end.url,
                 autoplay: true,
@@ -148,7 +157,7 @@ function QuizApp({ done, questions }) {
             </div>
             :
             <div className ="question-box">
-                <span>Correct: {correct}</span>
+                {/* <span>Correct: {correct}</span> */}
                 <h5>Question No. {currentQuestion + 1} out of 50</h5>
                 <h4>{questions[currentQuestion].question}</h4>
                 <div className ="answers-holder">
@@ -169,7 +178,7 @@ function QuizApp({ done, questions }) {
             </div>
         }
         <br/>
-        <center><small>Double tap to confirm answer.</small></center>
+        {!explanation && <center><small>Double tap to confirm answer.</small></center>}
         </>
     )
 } 

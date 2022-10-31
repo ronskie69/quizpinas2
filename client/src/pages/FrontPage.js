@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { Howler, Howl} from 'howler'
 import '../css/FrontPage.css'
-import { upuan, tatsulok, pinoy_ako} from '../sounds'
+import { upuan, tatsulok, pinoy_ako, ph} from '../sounds'
 
 const FrontPage = ({ onSetPage }) => {
 
@@ -11,8 +11,9 @@ const FrontPage = ({ onSetPage }) => {
     Howler.stop()
 
     bg = new Howl({
-      src: [pinoy_ako.url, tatsulok.url ],
+      src: [ ph.url, pinoy_ako.url ],
       autoplay: true,
+      loop: true,
       preload:true,
       onloaderror:() => {
         Howler.stop()

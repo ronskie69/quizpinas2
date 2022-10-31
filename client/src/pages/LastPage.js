@@ -21,17 +21,18 @@ const LastPage = ({ score, next }) => {
     const Toaster = withReactContent(Swal)
 
     var bg = null
+    var swal = null
 
     const iconStyle = {
         color: '#edac1a',
         zoom: '1.4'
     }
 
-    const submitScore = (e) => {
+    const submitScore = async (e) => {
         e.preventDefault()
 
-        if(playerName.length > 10){
-            return Toaster.fire({ text: 'Nickname too long!', icon: 'error', confirmButtonColor: '#000',cancelButtonText: 'Okay' })
+        if(playerName.length > 9){
+            return Toaster.fire({ text: 'Nickname too long!', icon: 'error', iconColor: '#000', confirmButtonColor: '#000',cancelButtonText: 'Okay' })
         }
         let newPlayer = {
             player_name: playerName,
@@ -43,11 +44,26 @@ const LastPage = ({ score, next }) => {
 
         if(!checkExisting || checkExisting.length == 0){
             if(score >= 25){
-                axios.post('https://quizpinas2.herokuapp.com/quizpinas/add', newPlayer)
-                    .then(() => {
-                        next(4, newPlayer)
-                    })
-                    .catch(err => console.log("Error", err))
+
+                Swal.fire({
+                    icon: 'info',
+                    text: 'Please wait...',
+                    allowOutsideClick: false,
+                    allowEscapeKey: false,
+                    iconColor: '#000',
+                    showConfirmButton: false,
+                });
+
+
+                try {
+
+                    await axios.post('https://quizpinas2.herokuapp.com/quizpinas/add', newPlayer)
+
+                    window.location.reload()
+
+                } catch(err) {
+                    window.location.reload()
+                }
             } 
         } else {
             return Toaster.fire({ text: 'Player already exists!', icon: 'error', confirmButtonColor: '#000',cancelButtonText: 'Okay'})
@@ -73,10 +89,10 @@ const LastPage = ({ score, next }) => {
 
   return (
     <div className='last-page'>
-        <h4>Quiz Finished!</h4>
+        <h4>{score >= 25 ? 'Congratulations!' : 'Quiz Finished!'}</h4>
         <p>
             Your score is {score} out of 50!
-            &nbsp;&nbsp;{ score > 25 ? <FaSmileWink style={iconStyle}/>:<>
+            &nbsp;&nbsp;{ score >= 25 ? <FaSmileWink style={iconStyle}/>:<>
             <FaSadCry style={iconStyle}/> <p>You failed to be in the rankings.</p>
             </>}
         </p>
