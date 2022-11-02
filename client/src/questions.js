@@ -24,24 +24,16 @@ export const questions = [
     },
     {
         questionID: 2,
-        question: 'Who invented the bamboo incubator?',
+        question: 'Did Fe Del Mundo invented the bamboo incubator?',
         answers: [
             {
-                answer: 'Agapito Flores',
-                isCorrect: false,
-            },
-            {
-                answer: 'Karl Sunogan',
-                isCorrect: false,
-            },
-            {
-                answer: 'Fe Del Mundo',
+                answer: 'Yes',
                 isCorrect: true,
             },
             {
-                answer: 'Alexis Belonio',
+                answer: 'No',
                 isCorrect: false,
-            }
+            },
         ],
         explanation: 'Fe Del Mundo invented the bamboo incubator in 1941 in bid to help families in rural communities without electricity.'
     },
@@ -1504,8 +1496,8 @@ export const questions = [
                 isCorrect: false,
             },
             {
-                answer: 'Julia Vega',
-                isCorrect: true,
+                answer: 'Julie Vega',
+                isCorrect: false,
             },
             {
                 answer: 'Lydia Vega',
@@ -1513,7 +1505,7 @@ export const questions = [
             },
             {
                 answer: "Lydia De Vega",
-                isCorrect: false,
+                isCorrect: true,
             }
         ],
         explanation: "Lydia De Vega was the Asia's fastest woman in the 80's."
@@ -1558,7 +1550,7 @@ export const questions = [
                 isCorrect: true,
             },
             {
-                answer: "Flying Fox",
+                answer: "Pilantok",
                 isCorrect: false,
             }
         ],
@@ -1669,11 +1661,11 @@ export const questions = [
                 isCorrect: false,
             },
             {
-                answer: 'Dr. Juanito Pedro',
+                answer: 'Dr. Willy Torres',
                 isCorrect: false,
             },
             {
-                answer: "Dr. Juanito Makasalanan",
+                answer: "Dr. Will Torres",
                 isCorrect: false,
             }
         ],
@@ -2033,7 +2025,7 @@ export const questions = [
                 isCorrect: false,
             },
             {
-                answer: 'Quipayo Church',
+                answer: 'Quiapo Church',
                 isCorrect: false,
             },
             {
@@ -2294,7 +2286,7 @@ export const questions = [
                 isCorrect: false,
             },
             {
-                answer: "Van Damme",
+                answer: "Van Damme Garcia",
                 isCorrect: false,
             }
         ],
