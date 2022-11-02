@@ -11,12 +11,12 @@ import '../css/AnswerButton.css'
 import axios from 'axios'
 import { useEffect } from 'react'
 import { Howl, Howler} from 'howler'
-import { tapos_na } from '../sounds'
+import { tapos_na, sad } from '../sounds'
 
 const LastPage = ({ score, next }) => {
 
     const [ playerName, setPlayerName ] = useState("")
-    const [ players, setPlayers ] = useContext(PContext)
+    const [ players, setPlayers,lowestScore ] = useContext(PContext)
 
     const Toaster = withReactContent(Swal)
 
@@ -43,7 +43,9 @@ const LastPage = ({ score, next }) => {
         let checkExisting = players.find(p=>p.player_name == playerName)
 
         if(!checkExisting || checkExisting.length == 0){
-            if(score >= 25){
+
+            if(!playerName) return;
+            if((score >= 25) && (score > lowestScore)){
 
                 Swal.fire({
                     icon: 'info',
@@ -71,38 +73,58 @@ const LastPage = ({ score, next }) => {
     }
 
     useEffect(() =>{
-        Howler.stop()
+        Howler.stop()   
 
-        bg = new Howl({
-            src: tapos_na.url,
-            loop: true,
-            autoplay: true,
-            onloaderror: (e,r) => {
-                console.log(e,r)
-                Howler.stop()
-                bg.play()
-            }
-        })
+        if((score >= 25) && (score > lowestScore)){
+            bg = new Howl({
+                src: tapos_na.url,
+                loop: true,
+                autoplay: true,
+                onloaderror: (e,r) => {
+                    console.log(e,r)
+                    Howler.stop()
+                    bg.play()
+                }
+            })
+        } else {
+            bg = new Howl({
+                src: sad.url,
+                loop: true,
+                autoplay: true,
+                onloaderror: (e,r) => {
+                    console.log(e,r)
+                    Howler.stop()
+                    bg.play()
+                }
+            })
+        }
 
-    },[0])
+    },[score])
 
 
   return (
     <div className='last-page'>
-        <h4>{score >= 25 ? 'Congratulations!' : 'Quiz Finished!'}</h4>
+        <h4>{(score >= 25) && (score > lowestScore) ? 'Congratulations!' : 'Quiz Finished!'}</h4>
         <p>
             Your score is {score} out of 50!
-            &nbsp;&nbsp;{ score >= 25 ? <FaSmileWink style={iconStyle}/>:<>
-            <FaSadCry style={iconStyle}/> <p>You failed to be in the rankings.</p>
+            &nbsp;&nbsp;
+            { 
+            (score >= 25) && (score > lowestScore) ? 
+            <FaSmileWink style={iconStyle}/>
+            :
+            <>
+            <FaSadCry style={iconStyle}/> 
+            <p>{'Still not enough to be in the rankings.'}</p>
             </>}
         </p>
         {
-            score > 25 ?
+            (score >= 25) && (score > lowestScore) ?
             <div className='form-group'>
                 <form onSubmit={submitScore} action="POST">
                     <input 
                         className='form-input' 
                         value={playerName}
+                        required
                         placeholder="Write your name here..."
                         onChange={(e) => setPlayerName(e.target.value)}
                         name="playerName"/>
